@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:TradeBit"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="525.921">
-    <Grid>
-        
-    </Grid>
+	<Grid>
+		<Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="183,151,0,0" Height="41" Click="Button_Click"/>
+
+	</Grid>
 </Window>
