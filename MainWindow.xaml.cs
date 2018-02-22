@@ -29,5 +29,10 @@ namespace TradeBit
         {
             MessageBox.Show("TEST!");
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,9 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TradeBit"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="525.921">
-	<Grid>
-		<Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="183,151,0,0" Height="41" Click="Button_Click"/>
+        Title="TradeBit" Height="450" Width="525.921">
+    <Grid Margin="-127,0,0,-69">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="10,357,0,0" Height="41" Click="Button_Click"/>
+        <ListView Margin="10,10,209,81" IsSynchronizedWithCurrentItem="True" SelectionChanged="ListView_SelectionChanged" Grid.ColumnSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="300"/>
+                    <GridViewColumn Width="200"/>
+                </GridView>
+            </ListView.View>
+            <Button>
+                <Button.Effect>
+                    <BlurEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Height="50" Width="79" Content="tt"/>
+            <Button/>
+            <Button Height="27" Width="53"/>
+            <ListBoxItem/>
+            <Separator/>
+            <CheckBox/>
+            <RadioButton/>
+            <TabItem Width="54" Height="36" Header="fut"/>
+            <ListViewItem Content="rdfydddryd" Margin="0"/>
+        </ListView>
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="382" Margin="132,16,0,0" VerticalAlignment="Top" Width="158">
+            <CheckBox Height="18" Width="136"/>
+            <ComboBoxItem Height="26"/>
+            <Button Height="23" Width="65"/>
+        </ListBox>
 
-	</Grid>
+    </Grid>
 </Window>
